@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de textos.</title>
+    <!--para configurações de estilo em maior numero, uma alternativa é criar uma tag <style> dentro da tag <head>, é poderá receber diversos seletores ou um só com várias configurações. Receberá as configurações dfinidas SOMENTE para ESSA página em questão.
+    Para configurações de mais de uma ágina ao mesmo tempo, existe uma terceira alternativa, com o uso de um link externo (que será aprendida depois)-->
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais formatações</h1>
@@ -17,8 +24,9 @@
         Nessa outra frase temos um <em>termo em ênfase</em> com a tag EM (com semântica)
     </p>
     <h2>Texto marcado</h2>
-    <!--para configurações de estilo pontuais (e poucas), é recomendado fazer diretamente na tag, com o uso do 'style'-->
-    <p>Podemos criar também um <mark style="background-color: pink;">
-        texto marcado</mark>, com a tag mark!</p>
+    <p>Podemos criar também um <mark>texto marcado</mark>, com a tag mark
+    </p>
+    <p>Outro paragrafo, com outro <mark>
+        trecho de texto marcado</mark>, que terá destaque visual</p>
 </body>
 </html>

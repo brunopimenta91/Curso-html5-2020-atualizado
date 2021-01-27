@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>h
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <!--Textos que sejam codigos de programação e etc são envelopados com a tag <code>   -->
+    <p>O comando <code>document.geElementById('teste')</code> é escrito em linguagem Javascript</p>
+    <pre>
+        <code>
+            numero = int(input('digite um numero'))
+            if numero % 2 == 0:
+                print(f`O numero {numero} é PAR!!`)
+            else:
+                print(f`o numero {numero} é IMPAR!!!!)`)
+            print(`fim do programa.`)
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <!-- tag <q> / quote - serve para dar significado (semantica) e aspas duplas ao trecho citado-->
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+
+    <h2>Citações completas</h2>
+    <!--usaremos a tag <blockquote> que serve para citrações maiores-->
+    <p>Segundo o personagem Geralt de Rívia, do autor polonês  Andrzej Sapkowski:</p>
+    <blockquote cite="https://www.submarino.com.br/produto/7428657/livro-o-ultimo-desejo-the-witcher-a-saga-do-bruxo-geralt-de-rivia?WT.srch=1&acc=d47a04c6f99456bc289220d5d0ff208d&epar=bp_pl_00_go_g35177&gclid=Cj0KCQiAmL-ABhDFARIsAKywVac5yim5I-WC9si3ipCgUMsmvDw8tuFLawNaNs_RHRvqbdi60ljvH3AaAhDAEALw_wcB&i=561e53416ed24cafb5322074&o=55b83d7d9c3238c7d13acf9d&opn=XMLGOOGLE&sellerid=03">
+        "Mas, se me couber escolher entre dois males, prefiro abster-me por completo da escolha”
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <!-- tag <abbr>- serve para mostrar na tela o significado de uma sigla ou abreviatura qualquer-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+
+    <h2>texto invertido</h2>
+    <!--usando a tag <bdo> - inserte a orgem dos textos digitados-->
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas escritas em HTML5!</bdo></p>
+</body>
+</html>

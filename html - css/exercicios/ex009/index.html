@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ORDENADAS</h2>
+    <!--Listas cuja ordem faz diferença-->
+    <p>Onde a ordem apresentada da lista influencia a lista em si</p>
+    <!--ol - ordered list -->
+    <ol type="i" start="5">
+        <!--tipos (types) de indices de listas ordenadas: 1, A, a, I, i -->
+        <!--o final da tag /li > está virando opcional, pela conveção do w3c -->
+        <li>acordar</li> <!-- li - list item - é cada item posto na listagem, seja ordenada ou não-->
+        <li>tomar café</li>
+        <li>escovar dentes</li>
+        <li>lavar roupa</li>
+        <li>ir para faculdade</li>
+        <li>almoçar</li>
+        <li>ir para o trabalho</li>
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+
+    <h2>Listas NÃO ORDENADAS</h2>
+    <p>Onde a ordem apresentada da lista NÃO influencia a lista em si</p>
+    <!--ul - unordered list -->
+    <ul type="square">
+        <!--tipos (types) de indices de listas NÃO ordenadas: circle, disc e square -->
+        <li>carne</li>
+        <li>frango</li>
+        <li>camarão</li>
+        <li>queijo</li>
+        <li>alface</li>
+        <li>tomate</li>
+        <li>iogurte</li>
+    </ul>
+
+    <h3>Juntando listas versão 1.0</h3>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="A">
+            <li>Clipper</li>
+            <li>Visual basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A" start="5">
+            <!--start define em qual posição será inciada a lista ordenada (por numeros ou letras)-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>Java</li>
+        </ol>
+    </ol>
+
+    <h2>Meus jogos Favoritos</h2>
+    <ol>
+        <li>God of war</li>
+        <ul>
+            <li>reboot</li>
+            <li>Ascension</li>
+            <li>3</li>
+        </ul>
+        <li>gran turismo</li>
+        <ul>
+            <li>2006</li>
+            <li>2010</li>
+            <li>2011</li>
+        </ul>
+        <li>cod</li>
+        <ul>
+            <li>warzone</li>
+            <li>black ops</li>
+            <ul type="square">
+                <li>3</li>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+            <li>WW II</li>
+        </ul>
+
+    </ol>
+
+    <h2>Lista de definições</h2>
+    <!--dl - definition list (lista de definição)-->
+    <dl>
+        <dt>HTML</dt>   <!--dt - definition term (termo de definição)-->
+        <dd> LINGUAGEM DE MARAÇÃO PARA CIRAÇÃO DO CONTEÚDO DO SITE.</dd>  <!--dd - definition description (descrição da definição)-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design de uma site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de progromação para criação de interatividade de um site</dd>
+    </dl>
+
+</body>
+
+</html>

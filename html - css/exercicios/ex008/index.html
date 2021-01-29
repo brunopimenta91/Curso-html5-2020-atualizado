@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de textos.</title>
-    <!--para configurações de estilo em maior numero, uma alternativa é criar uma tag <style> dentro da tag <head>, é poderá receber diversos seletores ou um só com várias configurações. Receberá as configurações dfinidas SOMENTE para ESSA página em questão.
-    Para configurações de mais de uma ágina ao mesmo tempo, existe uma terceira alternativa, com o uso de um link externo (que será aprendida depois)-->
-    <style>
-        mark {
-            background-color: aqua;
-        }
-    </style>
+    <title>Outras formatações</title>h
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (SEM semântica)</p>
-    <p>Nesta outra frase, temos um <strong>termo em destaque</strong> usando a tag STRONG(COM semântica)</p>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <!--Textos que sejam codigos de programação e etc são envelopados com a tag <code>   -->
+    <p>O comando <code>document.geElementById('teste')</code> é escrito em linguagem Javascript</p>
+    <pre>
+        <code>
+            numero = int(input('digite um numero'))
+            if numero % 2 == 0:
+                print(f`O numero {numero} é PAR!!`)
+            else:
+                print(f`o numero {numero} é IMPAR!!!!)`)
+            print(`fim do programa.`)
+        </code>
+    </pre>
 
-    <h2>Itálico / Ênfase</h2>
-    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
-    <p>
-        Nessa outra frase temos um <em>termo em ênfase</em> com a tag EM (com semântica)
-    </p>
-    <h2>Texto marcado</h2>
-    <p>Podemos criar também um <mark>texto marcado</mark>, com a tag mark
-    </p>
-    <p>Outro paragrafo, com outro <mark>
-        trecho de texto marcado</mark>, que terá destaque visual</p>
-    <h2>Texto GRANDE e pequeno</h2>
-    <!-- tanto a tag <big> (já depreciada) quanto a tag  <small> (ainda aceita, mas em breve pode ser depreciada pelo W3C) tem hoje pouco uso pratica. Geralmente hoje configuramos tamanho de texto atras das configurações de estilo em CSS-->
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo</p>
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
-    <h2>Texto inserido</h2>
-    <p>Podemos marcar <ins>um texto como inserido</ins> (tag com sentido /sêmantica) para dar uma ênfase que ele foi adicionado depois</p>
-    <p>Existem também <u>o sublinhado</u> com a tag U (NÂO semântica)</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas acima um pouco do texto, do tipo x<sup>20+3</sup></p>
-    <h2>Texto Subscrito</h2>
-    <p>Para inserir coisas acima um pouco do texto, do tipo h<sub>2</sub>0</p>
+    <h2>Citações simples</h2>
+    <!-- tag <q> / quote - serve para dar significado (semantica) e aspas duplas ao trecho citado-->
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+
+    <h2>Citações completas</h2>
+    <!--usaremos a tag <blockquote> que serve para citrações maiores-->
+    <p>Segundo o personagem Geralt de Rívia, do autor polonês  Andrzej Sapkowski:</p>
+    <blockquote cite="https://www.submarino.com.br/produto/7428657/livro-o-ultimo-desejo-the-witcher-a-saga-do-bruxo-geralt-de-rivia?WT.srch=1&acc=d47a04c6f99456bc289220d5d0ff208d&epar=bp_pl_00_go_g35177&gclid=Cj0KCQiAmL-ABhDFARIsAKywVac5yim5I-WC9si3ipCgUMsmvDw8tuFLawNaNs_RHRvqbdi60ljvH3AaAhDAEALw_wcB&i=561e53416ed24cafb5322074&o=55b83d7d9c3238c7d13acf9d&opn=XMLGOOGLE&sellerid=03">
+        "Mas, se me couber escolher entre dois males, prefiro abster-me por completo da escolha”
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <!-- tag <abbr>- serve para mostrar na tela o significado de uma sigla ou abreviatura qualquer-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+
+    <h2>texto invertido</h2>
+    <!--usando a tag <bdo> - inserte a orgem dos textos digitados-->
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas escritas em HTML5!</bdo></p>
 </body>
 </html>

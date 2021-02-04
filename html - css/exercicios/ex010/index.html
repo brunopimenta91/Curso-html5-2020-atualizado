@@ -16,5 +16,11 @@
     <!--Para links internos, NÃO HÁ NECESSIDADE de usar o link inteiro da página destino. Mas para isso funcionar, a página interna e que será o destino do link, precisa estar na MESMA PASTA da pagina index!!! ATENÇâO! -->
     <p>Essa é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pagina002.html" rel="next">segunda página</a></p>
     <!--No atributo rel, NÃO existe o valor 'internal' (fazendo referência ao dos links externos, o 'external'). Mas para ajudar no sistema de navegação, existem os valores 'next' (para a página a seguir) e 'prev'/'previous' (para a página anterior) -->
+
+    <!--Como acessar link para paginas internas em pastas diferentes em relação a da pagina mãe: No endereço presente no atributo 'href' é preciso estar atento a pasta e nome da página que se quer endereçar! ATENÇÃO!! -->
+    <p>Voce aqui pode ter acessa a nossa <a href="noticias/pagina003.html" target="_self" rel="next">página de notícias!!!</a></p>
+
+    <!--obs! para quando estamos criando links internos, mas que queremos que sejam abertos NA MESMA ABA que estamos, usamos no atributo 'target' o valor '_self' ou não precisamos colocar a target no espaço interno da tag 'a' (já que 'self' é o padrão de toda tag 'a')-->
+
 </body>
 </html>

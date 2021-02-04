@@ -6,9 +6,15 @@
     <title>Trabalhando com links</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
+    <h1>Usando links EXTERNOS</h1>
     <!--Quando queremos criar links para sites que não são nossos, usamos dois atributos internos da tag 'a': target="_blank" rel="external" - 'target' define se a pagina destino será aberta na mesma guia ou em outra nova. Já 'rel' identifica se o link será um link para um site externo. -->
     <p>Voce pode acessar o <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público do Gustavo Guanabara no github</a></p>
     <p>Você e qualquer pessoa pode acessar também <a href="https://www.youtube.com/user/cursosemvideo" target="_blank" rel="external">o canal gratuito do gustavo guanabara no Youtube</a>, o Curso em vídeo!!!</p>
+
+    <!--criando agora links internos (páginas que somos donos)-->
+    <h1>Usando links INTERNOS</h1>
+    <!--Para links internos, NÃO HÁ NECESSIDADE de usar o link inteiro da página destino. Mas para isso funcionar, a página interna e que será o destino do link, precisa estar na MESMA PASTA da pagina index!!! ATENÇâO! -->
+    <p>Essa é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pagina002.html" rel="next">segunda página</a></p>
+    <!--No atributo rel, NÃO existe o valor 'internal' (fazendo referência ao dos links externos, o 'external'). Mas para ajudar no sistema de navegação, existem os valores 'next' (para a página a seguir) e 'prev'/'previous' (para a página anterior) -->
 </body>
 </html>

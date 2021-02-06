@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11 - mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em diversos dispositivos diferentes ou simplesmente aumente o diminua o tamanho da aba aberta do seu navegador.</p>
+
+    <!-- TAG NOVA!!! <picture> - possui ter varias fontes (sources), podendo possuir varios <img> internos (e de tamanhos diferentes)-->
+    <picture>
+        <!--ir colocando os sources em ordem cresecente (ou msm decrescente, mas é preciso atenção à configuração de ambos), da imagem menor para a maior-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">  <!--imagem para dispositovs moveis pequenos e jnelas diminutas-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--imagem para dispositivos de tamaho maior (tablets , etc) ou abas de navegador medias-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">   <!--A imagem base (a imagem de maior dimensão)-->
+    </picture>
+</body>
+</html>

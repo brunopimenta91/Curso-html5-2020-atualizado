@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Videos em HTML5</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>O vídeo abaixo está hospedado no meu próprio servidor.</p>
+
+    <!--Para inserir videos de forma mais simploria, temos a tag <video>  
+    <video src="midia/Video_Fogo8.m4v" width="350" height="250" controls></video>    -->
+
+    <!--Para inserir diversos formatos de um mesmo video, pois cada navegador é mais compativel com um, samos a tag <video> com varias tags <source>, cada uma com um formato e o endereço do video nesse mesmo formato. -->
+    <video width="500" height="300" poster="imagens/foto_fogo.jpg" controls>
+        <source src="midia/Video_Fogo8.m4v" type="video/m4v">
+        <source src="midia/video_fogo2.mkv" type="video/mkv">
+        <source src="midia/Video_Fogo5.webm" type="video/webm">
+        <p>Seu navegador não tem correspondência com reprodução de vídeos</p>  <!--essa tag será exibida caso nenhum dos formatos inseridos seja compativel-->
+    </video>
+</body>
+</html>
+
+

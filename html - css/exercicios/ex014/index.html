@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Locais / Internos</title>
+
+    <!--Usando estilos de forma local/interna (no proprio arquivo)- 
+        Vantagens: Dá para configurar o estilo de inumeas tags de mesmo tipo ao mesmo tempo. Muito usado em páginas simples, quando são necessárias configurações de uma página/documento só 
+        Desvantagens: Deixa a visualização do documento HTML meio estranha, por o trecho de estilo sendo interno, ele é MUITO MAIOR que o trecho de conteudo semantico (A PARTE DE HTML MESMO). Outra desvantagem é que se for o caso de ter uma mesma configuração em páginas/documentos diferentes, seria preciso copiar o trecho de estilo em TODAS as páginas, o que é pouco prático e inteligente. -->
+
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        h1 {
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+        h2 {
+            color: red;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem libero, eum harum minus veritatis distinctio perspiciatis porro! Molestiae hic deleniti vitae. Quod maiores quasi nemo reprehenderit velit suscipit! Exercitationem.</p>
+
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, impedit velit cumque rem aliquid modi aperiam enim necessitatibus placeat eaque a accusantium tempora perspiciatis voluptatibus maiores iusto, unde cum deleniti!</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facilis! Eum aspernatur quidem ipsam fugiat perferendis magni a quas nobis nihil eveniet tempora reiciendis, obcaecati sed eos excepturi ex id.</p>
+
+</body>
+</html>

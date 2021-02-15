@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Externos</title>
+
+    <!--para inserir estilos externos, precisamos inserir um link de tipo css (link:css) com o nome do aruqivo de estilo externo estando no atributo 'href'. Esse tipo de inclusão de estilo css em documentos HTML é o MAIS VERSÁTIL E USADO, pois pode ser usado em uma pagina ou em muitas. 
+
+    Já em nivel de relevancia e versatilidade, segue a sequência:
+    ESTILOS INLINE < ESTILOS INTERNOS < ESTILOS EXTERNOS
+
+     É possivel o uso dos tres tipos de inserção de estilo em páginas html, AO MESMO TEMPO, dependendo do caso.
+    -->
+
+    <link rel="stylesheet" href="style.css">   <!--link de estilo EXTERNO-->
+
+    <!--link de estilo INTERNO-->
+    <style>
+        h1 {
+            text-decoration: underline;
+        }
+        h2 {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem libero, eum harum minus veritatis distinctio perspiciatis porro! Molestiae hic deleniti vitae. Quod maiores quasi nemo reprehenderit velit suscipit! Exercitationem.</p>
+
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, impedit velit cumque rem aliquid modi aperiam enim necessitatibus placeat eaque a accusantium tempora perspiciatis voluptatibus maiores iusto, unde cum deleniti!</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facilis! Eum aspernatur quidem ipsam fugiat perferendis magni a quas nobis nihil eveniet tempora reiciendis, obcaecati sed eos excepturi ex id.</p>
+
+    <!--configuração de estilo INLINE (dentro de tag)-->
+    <p style="text-align: right;"><a href="pagina2.html" target="">Ir para página 2!</a></p>
+
+</body>
+</html>
